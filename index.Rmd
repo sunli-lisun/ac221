@@ -1,6 +1,6 @@
 --- 
-title: "YOUR TITLE HERE"
-author: "YOUR NAMES HERE"
+title: "Ethical Analysis of Boston 311 Service: Observational Study"
+author: "Li Sun, Yanqi Luo, Ziye Tao, Matt Roth"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 ---
