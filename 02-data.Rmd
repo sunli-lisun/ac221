@@ -1,2 +1,22 @@
 # Data sources
 
+## 311 Service Request Data
+
+The 311 service request data from 2018 to 2021 is downloaded from  [**City of Boston 's open data hub**](https://data.boston.gov/dataset/311-service-requests). The datasets includes all channels of engagement in which a service request is crated from year 2018 - 2021. In total, there are 1,047,926 cases. Below is the table of variables in this data set.
+
+```{r}
+descrip311=read.csv('data/description_311.csv')
+knitr::kable(descrip311,
+             caption = "Feature Description of 311 request dataset")
+```
+
+## Demographic Data
+
+Demographic related data grouped by neighborhoods, including race, per capita income, education level, poverty rate, is also download from  [**City of Boston 's open data hub**](https://data.boston.gov/dataset/neighborhood-demographics) compiled by Boston Planning and Development Agency (BPDA). Since cencus data is not collect in every year, 2015-2019 is the most recent available neighborhood demographic data come from the 5-year American Community Survey (ACS). Below is the table of variables in this data set.
+
+<center>
+![](image/neighborhood.png){width=50%}
+
+
+
+

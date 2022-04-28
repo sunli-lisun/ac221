@@ -73,7 +73,11 @@
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a></li>
+<li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#service-request-data"><i class="fa fa-check"></i><b>2.1</b> 311 Service Request Data</a></li>
+<li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#demographic-data"><i class="fa fa-check"></i><b>2.2</b> Demographic Data</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="data-transformation.html"><a href="data-transformation.html"><i class="fa fa-check"></i><b>3</b> Data transformation</a></li>
 <li class="chapter" data-level="4" data-path="missing-values.html"><a href="missing-values.html"><i class="fa fa-check"></i><b>4</b> Missing values</a></li>
 <li class="chapter" data-level="5" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>5</b> Results</a></li>
@@ -100,7 +104,152 @@
             <section class="normal" id="section-">
 <div id="data-sources" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Data sources<a href="data-sources.html#data-sources" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="service-request-data" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> 311 Service Request Data<a href="data-sources.html#service-request-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The 311 service request data from 2018 to 2021 is downloaded from <a href="https://data.boston.gov/dataset/311-service-requests"><strong>City of Boston ’s open data hub</strong></a>. The datasets includes all channels of engagement in which a service request is crated from year 2018 - 2021. In total, there are 1,047,926 cases. Below is the table of variables in this data set.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 2.1: </span>Feature Description of 311 request dataset</caption>
+<colgroup>
+<col width="14%" />
+<col width="85%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Feature</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">case_enquiry_id</td>
+<td align="left">The unique ID of each case</td>
+</tr>
+<tr class="even">
+<td align="left">open_dt</td>
+<td align="left">Open time of the case</td>
+</tr>
+<tr class="odd">
+<td align="left">target_dt</td>
+<td align="left">Target time of the case</td>
+</tr>
+<tr class="even">
+<td align="left">closed_dt</td>
+<td align="left">Closed time of the case</td>
+</tr>
+<tr class="odd">
+<td align="left">ontime</td>
+<td align="left">Whether the case is ontime or overdue</td>
+</tr>
+<tr class="even">
+<td align="left">case_status</td>
+<td align="left">Status of the case (‘Closed’, ‘Open’)</td>
+</tr>
+<tr class="odd">
+<td align="left">closure_reason</td>
+<td align="left">Closure status and text indicating findings or work done to close a given case.</td>
+</tr>
+<tr class="even">
+<td align="left">case_title</td>
+<td align="left">Title given to a case.</td>
+</tr>
+<tr class="odd">
+<td align="left">subject</td>
+<td align="left">Part of a case classification hierarchy (subject &gt; reason &gt; type)</td>
+</tr>
+<tr class="even">
+<td align="left">reason</td>
+<td align="left">Part of a case classification hierarchy (subject &gt; reason &gt; type)</td>
+</tr>
+<tr class="odd">
+<td align="left">type</td>
+<td align="left">Part of a case classification hierarchy (subject &gt; reason &gt; type)</td>
+</tr>
+<tr class="even">
+<td align="left">queue</td>
+<td align="left">Queue a case is assigned to</td>
+</tr>
+<tr class="odd">
+<td align="left">department</td>
+<td align="left">Department a case is assigned to</td>
+</tr>
+<tr class="even">
+<td align="left">submittedphoto</td>
+<td align="left">Photo submitted by the citizen along with the request</td>
+</tr>
+<tr class="odd">
+<td align="left">closedphoto</td>
+<td align="left">Closed photo of the case</td>
+</tr>
+<tr class="even">
+<td align="left">location</td>
+<td align="left">Detailed location of the case</td>
+</tr>
+<tr class="odd">
+<td align="left">fire_district</td>
+<td align="left">BFD fire district case falls within</td>
+</tr>
+<tr class="even">
+<td align="left">pwd_district</td>
+<td align="left">Public Works district a case falls within</td>
+</tr>
+<tr class="odd">
+<td align="left">city_council_district</td>
+<td align="left">City Council district a case falls within</td>
+</tr>
+<tr class="even">
+<td align="left">police_district</td>
+<td align="left">Police district a case falls within</td>
+</tr>
+<tr class="odd">
+<td align="left">neighborhood</td>
+<td align="left">Neighborhood relayed by caller and entered by call taker</td>
+</tr>
+<tr class="even">
+<td align="left">neighborhood_services_district</td>
+<td align="left">Districts under the Office of Neighborhood Services</td>
+</tr>
+<tr class="odd">
+<td align="left">ward</td>
+<td align="left">Election ward a case falls within</td>
+</tr>
+<tr class="even">
+<td align="left">precinct</td>
+<td align="left">Election precinct a case falls within</td>
+</tr>
+<tr class="odd">
+<td align="left">location_street_name</td>
+<td align="left">Street name a case falls within</td>
+</tr>
+<tr class="even">
+<td align="left">location_zipcode</td>
+<td align="left">Zip code a case falls within</td>
+</tr>
+<tr class="odd">
+<td align="left">latitude</td>
+<td align="left">Latitude of a case</td>
+</tr>
+<tr class="even">
+<td align="left">longitude</td>
+<td align="left">Longitude of a case</td>
+</tr>
+<tr class="odd">
+<td align="left">source</td>
+<td align="left">Channel that citizens use to make the request (‘Constituent Call’, ‘Citizens Connect App’, ‘City Worker App’,‘Self Service’, ‘Employee Generated’, ‘Twitter’,‘Maximo Integration’)</td>
+</tr>
+<tr class="even">
+<td align="left">year</td>
+<td align="left">Year of the case</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="demographic-data" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Demographic Data<a href="data-sources.html#demographic-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Demographic related data grouped by neighborhoods, including race, per capita income, education level, poverty rate, is also download from <a href="https://data.boston.gov/dataset/neighborhood-demographics"><strong>City of Boston ’s open data hub</strong></a> compiled by Boston Planning and Development Agency (BPDA). Since cencus data is not collect in every year, 2015-2019 is the most recent available neighborhood demographic data come from the 5-year American Community Survey (ACS). Below is the table of variables in this data set.</p>
+<center>
+<p><img src="image/neighborhood.png" style="width:50.0%" /></p>
 
+</div>
 </div>
             </section>
 

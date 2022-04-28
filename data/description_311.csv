@@ -1,0 +1,31 @@
+Feature,Description
+case_enquiry_id,The unique ID of each case
+open_dt,Open time of the case
+target_dt,Target time of the case
+closed_dt,Closed time of the case
+ontime,Whether the case is ontime or overdue
+case_status,"Status of the case ('Closed', 'Open')"
+closure_reason,Closure status and text indicating findings or work done to close a given case.
+case_title,Title given to a case.
+subject,Part of a case classification hierarchy (subject > reason > type)
+reason,Part of a case classification hierarchy (subject > reason > type)
+type,Part of a case classification hierarchy (subject > reason > type)
+queue,Queue a case is assigned to
+department,Department a case is assigned to
+submittedphoto,Photo submitted by the citizen along with the request
+closedphoto,Closed photo of the case
+location,Detailed location of the case
+fire_district,BFD fire district case falls within
+pwd_district,Public Works district a case falls within
+city_council_district,City Council district a case falls within
+police_district,Police district a case falls within
+neighborhood,Neighborhood relayed by caller and entered by call taker
+neighborhood_services_district,Districts under the Office of Neighborhood Services
+ward,Election ward a case falls within
+precinct,Election precinct a case falls within
+location_street_name,Street name a case falls within
+location_zipcode,Zip code a case falls within
+latitude,Latitude of a case
+longitude,Longitude of a case
+source,"Channel that citizens use to make the request ('Constituent Call', 'Citizens Connect App', 'City Worker App','Self Service', 'Employee Generated', 'Twitter','Maximo Integration')"
+year,Year of the case
