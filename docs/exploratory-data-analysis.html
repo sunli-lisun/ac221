@@ -114,18 +114,24 @@
 <h2><span class="header-section-number">3.1</span> Longitudinal Analysis<a href="exploratory-data-analysis.html#longitudinal-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 We first examine the time trend of the request number in four years. The graph below shows a seasonality trend in each year, where it increases first, peaks in summer season, then decreases. We can also notice that there is a sharp drop in request number in week 10 to week 15 of 2020. A possible explanation would be the start of Covid-19 which leads citizens to stay at home and make less requests.
 <center>
-<p><img src="image/time.png" style="width:60.0%" /></p>
+<p><img src="image/time.png" style="width:80.0%" /></p>
 </div>
 <div id="distribution-analysis" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Distribution Analysis<a href="exploratory-data-analysis.html#distribution-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>311 Requests by Different Channels across Neighborhood</strong></p>
-<p>There are six channels where citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
+<p>There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
 Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often.</p>
 <center>
-<p><img src="image/eda-channel.png" style="width:60.0%" /></p>
+<img src="image/eda-channel.png" style="width:80.0%" />
+</center>
 <p><strong>311 Report Request Number in Different Neighborhood</strong></p>
 <center>
-<p><img src="image/eda-map.png" style="width:60.0%" /></p>
+<img src="image/eda-map.png" style="width:80.0%" />
+</center>
+<p>The map intuitively shows that 311 report request numbers vary a lot geographically. The northern part is yellower than the southern part which indicates that citizens in the northern part generates more requests than the citizens in the southern part. In order to quantitatively compare the request numbers in every neighboorbood, a bar plot is further generated.</p>
+<center>
+<img src="image/eda-numberrequest.png" style="width:80.0%" />
+</center>
 </div>
 <div id="response-metrics-analysis" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Response Metrics Analysis<a href="exploratory-data-analysis.html#response-metrics-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
