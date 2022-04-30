@@ -6,7 +6,6 @@ response-metrics
 demographic-data
 exploratory-data-analysis
 longitudinal-analysis
-distribution-analysis
-response-metrics-analysis
+distribution-analysis-across-neighborhood
 fairness-analysis
 conclusion

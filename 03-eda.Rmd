@@ -6,7 +6,7 @@ We first examine the time trend of the request number in four years. The graph b
 <center>
 ![](image/time.png){width=80%}
 
-## Distribution Analysis
+## Distribution Analysis across Neighborhood
 
 **311 Requests by Different Channels across Neighborhood**
 
@@ -31,7 +31,6 @@ The map intuitively shows that 311 report request numbers vary a lot geographica
 ![](image/eda-numberrequest.png){width=80%}
 </center>
 
-## Response Metrics Analysis
 
 **Distribution of Close Cases in Different Boston Neighborhoods**
 
