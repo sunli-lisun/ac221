@@ -8,4 +8,17 @@ We first examine the time trend of the request number in four years. The graph b
 
 ## Distribution Analysis
 
+**311 Requests by Different Channels across Neighborhood**
+
+There are six channels where citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods. 
+Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often. 
+
+<center>
+![](image/eda-channel.png){width=60%}
+
+**311 Report Request Number in Different Neighborhood**
+
+<center>
+![](image/eda-map.png){width=60%}
+
 ## Response Metrics Analysis
