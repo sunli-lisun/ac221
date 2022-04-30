@@ -2,6 +2,7 @@ tab:unnamed-chunk-3
 introduction
 data-sources
 service-request-data
+response-metrics
 demographic-data
 exploratory-data-analysis
 fairness-analysis

@@ -9,6 +9,17 @@ descrip311=read.csv('data/description_311.csv')
 knitr::kable(descrip311,
              caption = "Feature Description of 311 request dataset")
 ```
+### Response Metrics
+
+There are four response metrics in this study:
+
+- Close Rate: Number of close cases divided by total number of requests. The close cases are identified from 'case status'.
+
+- Resolved Rate: Number of resolved cases divided by total number of requests. The resolved cases are identified from 'closure_reason'. 
+
+- Awaiting Time: 'closed_dt' - 'open_dt'. 
+
+- Number of Requests  Per Capita: Total number of requests in a neighborhood divided by the population of that neighborhood. Population data will be described in the next section. 
 
 ## Demographic Data
 

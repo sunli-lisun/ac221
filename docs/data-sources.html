@@ -75,7 +75,10 @@
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="data-sources.html"><a href="data-sources.html"><i class="fa fa-check"></i><b>2</b> Data sources</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#service-request-data"><i class="fa fa-check"></i><b>2.1</b> 311 Service Request Data</a></li>
+<li class="chapter" data-level="2.1" data-path="data-sources.html"><a href="data-sources.html#service-request-data"><i class="fa fa-check"></i><b>2.1</b> 311 Service Request Data</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="data-sources.html"><a href="data-sources.html#response-metrics"><i class="fa fa-check"></i><b>2.1.1</b> Response Metrics</a></li>
+</ul></li>
 <li class="chapter" data-level="2.2" data-path="data-sources.html"><a href="data-sources.html#demographic-data"><i class="fa fa-check"></i><b>2.2</b> Demographic Data</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="exploratory-data-analysis.html"><a href="exploratory-data-analysis.html"><i class="fa fa-check"></i><b>3</b> Exploratory Data Analysis</a></li>
@@ -240,6 +243,16 @@
 </tr>
 </tbody>
 </table>
+<div id="response-metrics" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Response Metrics<a href="data-sources.html#response-metrics" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are four response metrics in this study:</p>
+<ul>
+<li><p>Close Rate: Number of close cases divided by total number of requests. The close cases are identified from ‘case status’.</p></li>
+<li><p>Resolved Rate: Number of resolved cases divided by total number of requests. The resolved cases are identified from ‘closure_reason’.</p></li>
+<li><p>Awaiting Time: ‘closed_dt’ - ‘open_dt’.</p></li>
+<li><p>Number of Requests Per Capita: Total number of requests in a neighborhood divided by the population of that neighborhood. Population data will be described in the next section.</p></li>
+</ul>
+</div>
 </div>
 <div id="demographic-data" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Demographic Data<a href="data-sources.html#demographic-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
