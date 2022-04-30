@@ -13,13 +13,13 @@ knitr::kable(descrip311,
 
 There are four response metrics in this study:
 
-- Close Rate: Number of close cases divided by total number of requests. The close cases are identified from 'case status'.
+- **Close Rate**: Number of close cases divided by total number of requests. The close cases are identified from 'case status'.
 
-- Resolved Rate: Number of resolved cases divided by total number of requests. The resolved cases are identified from 'closure_reason'. 
+- **Resolved Rate**: Number of resolved cases divided by total number of requests. The resolved cases are identified from 'closure_reason'. 
 
-- Awaiting Time: 'closed_dt' - 'open_dt'. 
+- **Awaiting Time**: 'closed_dt' - 'open_dt'. 
 
-- Number of Requests  Per Capita: Total number of requests in a neighborhood divided by the population of that neighborhood. Population data will be described in the next section. 
+- **Number of Requests  Per Capita**: Total number of requests in a neighborhood divided by the population of that neighborhood. Population data will be described below. 
 
 ## Demographic Data
 
