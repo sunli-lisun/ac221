@@ -4,7 +4,5 @@ data-sources
 service-request-data
 demographic-data
 exploratory-data-analysis
-missing-values
-results
-interactive-component
+fairness-analysis
 conclusion
