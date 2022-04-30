@@ -25,10 +25,41 @@ Though the most commonly used channels are citizens connect APP and 311 phone ca
 ![](image/eda-map.png){width=80%}
 </center>
 
-The map intuitively shows that 311 report request numbers vary a lot geographically. The northern part is yellower than the southern part which indicates that citizens in the northern part generates more requests than the citizens in the southern part. In order to quantitatively compare the request numbers in every neighboorbood, a bar plot is further generated. 
+The map intuitively shows that 311 report request numbers vary a lot geographically. The northern part is yellower than the southern part which indicates that citizens in the northeastern part generates more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower than of request numbers. Those neighborhoods are located in the western part.
 
 <center>
 ![](image/eda-numberrequest.png){width=80%}
 </center>
 
 ## Response Metrics Analysis
+
+**Distribution of Close Cases in Different Boston Neighborhoods**
+
+Most neighborhoods have close rate higher than 85%. Chestnut Hill, Fenway/ Kenmore/ Audubon Circle/ Longwood is the only neighborhood has close rate (81.21%) lower than 85%. Beacon Hill has the highest closed rate (91.55%), followed by South End (91%) and East Boston (90.37%). 
+
+<center>
+![](image/eda-close.png){width=80%}
+</center>
+
+**Distribution of Resolved Cases in Different Boston Neighborhoods**
+
+From the graph above, Greater Mattapan and West Roxbury are the two neighborhoods that have non_resolved cases numbers higher than resolved cases numbers which indicates the resolved rate is lower than 50%. Among the other neighborhoods, South End (59.44%) and Alluston/ Bringhton (58.57%) have relatively high resolved rates; whereas, Fenway / Kenmore / Audubon Circle / Longwood (51.01%), Mission Hill (51.46%), Boston (50.67%) have relatively low resolved rates.
+
+<center>
+![](image/eda-resolve.png){width=80%}
+</center>
+
+**Distribution of Average Awaiting Time in Different Boston Neighborhoods**
+
+On average, people need to wait at least a week for a case to be closed except in Chestnut Hill which might due to the extreme low number of cases. South Boston/ South Boston Waterfront, South End, and Roxbury have relatively short waiting time compared to Hyde Park, Charlestown, and West Roxbury where people need to wait longer.
+
+<center>
+![](image/eda-awaiting.png){width=80%}
+</center>
+
+<!-- Close rate and resolved rate in each neighborhood: -->
+
+<!-- <center> -->
+<!-- ![](image/eda-table.png){width=50%,height=60%} -->
+<!-- </center> -->
+
