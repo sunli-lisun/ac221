@@ -5,5 +5,8 @@ service-request-data
 response-metrics
 demographic-data
 exploratory-data-analysis
+longitudinal-analysis
+distribution-analysis
+response-metrics-analysis
 fairness-analysis
 conclusion
