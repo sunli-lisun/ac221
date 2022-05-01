@@ -92,7 +92,7 @@
 <li class="chapter" data-level="4.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-neighborhood"><i class="fa fa-check"></i><b>4.1</b> Fairness Analysis Based on Neighborhood</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#interaction-level-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.1</b> 311 Interaction Level Across Different Neighborhoods</a></li>
-<li class="chapter" data-level="4.1.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.2</b> Close rate, resolved rate, awaiting time Across Different Neighborhoods</a></li>
+<li class="chapter" data-level="4.1.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.2</b> Close rate, Resolved Rate, Awaiting Time Across Different Neighborhoods</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-channel"><i class="fa fa-check"></i><b>4.2</b> Fairness Analysis Based on Channel</a></li>
 </ul></li>
@@ -127,12 +127,127 @@
 </center>
 </div>
 <div id="close-rate-resolved-rate-awaiting-time-across-different-neighborhoods" class="section level3 hasAnchor" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Close rate, resolved rate, awaiting time Across Different Neighborhoods<a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<h3><span class="header-section-number">4.1.2</span> Close rate, Resolved Rate, Awaiting Time Across Different Neighborhoods<a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In this section, we explore whether these are differences in close rate, resolved rate and awaiting time across different neighborhoods by calculating correlation and applying linear regression.</p>
 <div id="race" class="section level4 hasAnchor" number="4.1.2.1">
 <h4><span class="header-section-number">4.1.2.1</span> Race<a href="fairness-analysis.html#race" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <center>
-<img src="image/f-white.png" style="width:80.0%" />
+<img src="image/f-white.png" height="220" />
 </center>
+<center>
+<img src="image/f-black.png" height="220" />
+</center>
+<table>
+<caption><span id="tab:unnamed-chunk-6">Table 4.1: </span>Correlation between Response Metrics and Race</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Close rate</th>
+<th align="right">Resolved Rate</th>
+<th align="right">Average awaiting time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">White proportion</td>
+<td align="right">0.050764</td>
+<td align="right">0.197647</td>
+<td align="right">-0.145470</td>
+</tr>
+<tr class="even">
+<td align="left">Black proportion</td>
+<td align="right">-0.163486</td>
+<td align="right">-0.335092</td>
+<td align="right">0.167532</td>
+</tr>
+</tbody>
+</table>
+<p>Statistically, there is no significant relation between close rate, resolved rate and awaiting time and racial structure within neighborhood from the p-value of three corresponding regressions and correlation values. Recap from the previous section, the average awaiting time all neighborhood is between 7 days and 12 days (except Chestnut Hill because of extremely small sample size). Long awaiting time can happen in any neighborhood no matter the withe is majority or the black is the majority. For example, in Hyde Park, black population is obviously higher than other race and in West Roxbury, white population is much higher than other racial. On the other hand, short awaiting time can also appear in both neighborhoods with more withe and neighborhood with more black. For example, Dorchester and Allston/Brighton are Black and White dominated respectively but the average awaiting time are both around 9 days. However, the average awaiting time in these two neighborhoods are both very long (more than 11 days). Therefore, we think there is no obvious racial discrimination in processing 311 requests.</p>
+</div>
+<div id="income" class="section level4 hasAnchor" number="4.1.2.2">
+<h4><span class="header-section-number">4.1.2.2</span> Income<a href="fairness-analysis.html#income" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</center>
+<center>
+<img src="image/f-income.png" height="220" />
+</center>
+<table>
+<caption><span id="tab:unnamed-chunk-7">Table 4.2: </span>Correlation between Response Metrics and Income</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Close rate</th>
+<th align="right">Resolved Rate</th>
+<th align="right">Average awaiting time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Per capita income</td>
+<td align="right">0.359678</td>
+<td align="right">0.369287</td>
+<td align="right">-0.323304</td>
+</tr>
+</tbody>
+</table>
+<p>Based on the p-value from regression relation and the correlation value between three response metrics and per capita income, there is no significant relation between income and all three response metrics (closed rate, resolved rate and awaiting time). Recap that there are only three neighborhoods with closed rate higher than 90%: Beacon Hill, East Boston and South End. But the per capita income in Beacon Hill almost triples the per capita income in East Boston. Combined with the plot of awaiting time in different neighborhoods, the awaiting time in Back Bay and West Roxbury are both high but the per capita income in Back Bay almost doubles the per capita income in West Roxbury. Therefore, we think the relation between per capita income and fairness in processing 311 request is not obvious from the given information.</p>
+</div>
+<div id="education-level" class="section level4 hasAnchor" number="4.1.2.3">
+<h4><span class="header-section-number">4.1.2.3</span> Education Level<a href="fairness-analysis.html#education-level" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</center>
+<center>
+<img src="image/f-edu.png" height="220" />
+</center>
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 4.3: </span>Correlation between Response Metrics and Education Level</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Close rate</th>
+<th align="right">Resolved Rate</th>
+<th align="right">Average awaiting time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Proportion of bachelor or higher</td>
+<td align="right">0.158577</td>
+<td align="right">0.264236</td>
+<td align="right">-0.204174</td>
+</tr>
+</tbody>
+</table>
+<p>We cannot tell that there is significant relationship between education level and closed rate/ resolved rate and awaiting time from regression results and correlation values. Ferway/ Kenmore/ Audubon Circle/ Longwood is the only neighborhood with closed rate lower than 85% but the population with bachelor degree or more is the absolute majority in the neighborhood. Recap that Mattapan and West Roxbury are the two neighborhoods with resolved rate lower than 50%, but proportion of bachelor or higher people in West Roxbury is much higher than that in Mattapan. For awaiting time, neighborhoods that have longer awaiting time and neighborhoods with shorter awaiting time can have similar education level structure. For example, in Charlestown and South Boston/ South Boston Waterfront, people with bachelor degree or more is absolute the majority but the average awaiting time in Charlestown is nearly 12 days but the average awaiting time in South Boston/ South Boston Waterfront is only about 7 days.</p>
+</div>
+<div id="poverty-rate" class="section level4 hasAnchor" number="4.1.2.4">
+<h4><span class="header-section-number">4.1.2.4</span> Poverty Rate<a href="fairness-analysis.html#poverty-rate" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</center>
+<center>
+<img src="image/f-poverty.png" height="220" />
+</center>
+<table>
+<caption><span id="tab:unnamed-chunk-9">Table 4.4: </span>Correlation between Response Metrics and Poverty Rate</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="right">Close rate</th>
+<th align="right">Resolved Rate</th>
+<th align="right">Average awaiting time</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Poverty rate</td>
+<td align="right">-0.42111</td>
+<td align="right">-0.073302</td>
+<td align="right">0.000929</td>
+</tr>
+</tbody>
+</table>
+<p>Similar with education level, there is no significant relationship between poverty rate and closed rate/ resolved rate/ waiting time from the linear regression results and correlation values. Both Neighborhoods with low poverty rate and neighborhoods with high poverty rate can have high closed rate. For example, the poverty in Roxbury(0.33%) is much higher than that in West Roxbury(6%), but the closed rate in Roxbury(89%) is higher than that in West Roxbury(85%). As for resolved rate, there are neighborhoods with high poverty rate (such as Roxbury) that have high resolved rate, but there are also neighborhoods with low poverty rate (such as South Boston/ South Boston Waterfront) that have high resolved rate. The poverty situation in neighborhoods that have longer waiting time is also a mix. Citizens in Fenway/ Kenmore/Audubon Circle/ Longwood (neighborhood with highest poverty rate) and West Roxbury (neighborhood with lowest poverty rate) both need to wait a long time.</p>
+</div>
+<div id="summary" class="section level4 hasAnchor" number="4.1.2.5">
+<h4><span class="header-section-number">4.1.2.5</span> Summary<a href="fairness-analysis.html#summary" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>For all four demographic factors: population, income, poverty and education level, there are no obvious relation between them and response metric. Although, we can see differences in these three metrics across neighborhoods, demographic factors are not explainable in these differences and we cannot tell any demographic discrimination in processing 311 requests. There might be other factors that cause the differences in response metrics.</p>
 </div>
 </div>
 </div>

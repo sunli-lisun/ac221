@@ -92,7 +92,7 @@
 <li class="chapter" data-level="4.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-neighborhood"><i class="fa fa-check"></i><b>4.1</b> Fairness Analysis Based on Neighborhood</a>
 <ul>
 <li class="chapter" data-level="4.1.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#interaction-level-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.1</b> 311 Interaction Level Across Different Neighborhoods</a></li>
-<li class="chapter" data-level="4.1.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.2</b> Close rate, resolved rate, awaiting time Across Different Neighborhoods</a></li>
+<li class="chapter" data-level="4.1.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.2</b> Close rate, Resolved Rate, Awaiting Time Across Different Neighborhoods</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-channel"><i class="fa fa-check"></i><b>4.2</b> Fairness Analysis Based on Channel</a></li>
 </ul></li>
@@ -130,11 +130,11 @@ We first examine the time trend of the request number in four years. The graph b
 <center>
 <img src="image/eda-map.png" style="width:80.0%" />
 </center>
-<p>The map intuitively shows that 311 report request numbers vary a lot geographically (please go to jupyter notebook to view the interactive version). The northern part is yellower than the southern part which indicates that citizens in the northeastern part generates more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower than of request numbers. Those neighborhoods are located in the western part.</p>
+<p>The map intuitively shows that 311 report request numbers vary a lot geographically (please see jupyter notebook if you want to view the interactive version). The northern part is yellower than the southern part which indicates that citizens in the northeastern part generates more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower than of request numbers. Those neighborhoods are located in the western part.</p>
 <center>
 <img src="image/eda-numberrequest.png" style="width:80.0%" />
 </center>
-We further normalized the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has highest request number, doesn’t have high report number per capita.
+We further normalize the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has highest request number, doesn’t have high report number per capita.
 <center>
 <img src="image/eda-numberpercapita.png" style="width:80.0%" />
 </center>
@@ -166,13 +166,13 @@ Though the most commonly used channels are citizens connect APP and 311 phone ca
 <center>
 <img src="image/eda-demo-race.png" style="width:50.0%" />
 </center>
-<p><strong>Education Level Distribution Description</strong>: Distribution of education Level is different from each neighborhood. From easy visualization and comparison, education level is further categorized to two categories - below bachelor and bachelor or higher. The proportion of bachelor or higher is higher than below bachelor in the majority of neighborhood except for Hyde Park, East Boston, Greater Mattapan, and Roxbury. Though the proportion of bachelor or higher people is higher in Dorchester and East Boston, the difference between these two group is small.</p>
-<center>
-<img src="image/eda-demo-edu.png" style="width:50.0%" />
-</center>
 <p><strong>Income Distribution Description:</strong> Per capita Income is significantly different in each neighborhood. The per capita income of Back Bay is the highest, and it is the only neighborhood having per capita income larger than 100,000. The per capita income of Beacon Hill and South Boston/ South Boston Waterfront are also relatively high. The per capita income of Longwood, Roxbury and Mission Hill are lower than 25,000 which are the lowest among all neighborhoods.</p>
 <center>
 <img src="image/eda-demo-income.png" style="width:50.0%" />
+</center>
+<p><strong>Education Level Distribution Description</strong>: Distribution of education Level is different from each neighborhood. From easy visualization and comparison, education level is further categorized to two categories - below bachelor and bachelor or higher. The proportion of bachelor or higher is higher than below bachelor in the majority of neighborhood except for Hyde Park, East Boston, Greater Mattapan, and Roxbury. Though the proportion of bachelor or higher people is higher in Dorchester and East Boston, the difference between these two group is small.</p>
+<center>
+<img src="image/eda-demo-edu.png" style="width:50.0%" />
 </center>
 <p><strong>Poverty Distribution Description</strong>: Distribution of poverty rate is different from each neighborhood. Ferway/ Kenmore/ Audubon Circle/ Longwood is the neighborhood with the highest poverty rate (39.2%), followed by Mission Hill, Roxbury and Longwood. All of these neighborhood have porverty rate larger than 25%. On the other side, West Roxbury has the lowest poverty rate (6.3%), followed by North End and Beacon Hill. The poverty rates of these neighborhood are all lower than 8%.</p>
 <center>

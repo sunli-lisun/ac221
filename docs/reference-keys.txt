@@ -1,4 +1,8 @@
 tab:unnamed-chunk-3
+tab:unnamed-chunk-6
+tab:unnamed-chunk-7
+tab:unnamed-chunk-8
+tab:unnamed-chunk-9
 introduction
 data-sources
 service-request-data
@@ -13,5 +17,9 @@ fairness-analysis-based-on-neighborhood
 interaction-level-across-different-neighborhoods
 close-rate-resolved-rate-awaiting-time-across-different-neighborhoods
 race
+income
+education-level
+poverty-rate
+summary
 fairness-analysis-based-on-channel
 conclusion
