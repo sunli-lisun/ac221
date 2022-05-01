@@ -7,5 +7,6 @@ demographic-data
 exploratory-data-analysis
 longitudinal-analysis
 distribution-analysis-across-neighborhood
+demographic-analysis
 fairness-analysis
 conclusion
