@@ -94,7 +94,11 @@
 <li class="chapter" data-level="4.1.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#interaction-level-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.1</b> 311 Interaction Level Across Different Neighborhoods</a></li>
 <li class="chapter" data-level="4.1.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods"><i class="fa fa-check"></i><b>4.1.2</b> Close rate, Resolved Rate, Awaiting Time Across Different Neighborhoods</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-channel"><i class="fa fa-check"></i><b>4.2</b> Fairness Analysis Based on Channel</a></li>
+<li class="chapter" data-level="4.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#fairness-analysis-based-on-channel"><i class="fa fa-check"></i><b>4.2</b> Fairness Analysis Based on Channel</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="fairness-analysis.html"><a href="fairness-analysis.html#number-of-requests-by-channel-vs.closed-rate-responsed-rate-awaiting-time"><i class="fa fa-check"></i><b>4.2.1</b> Number of Requests by Channel vs.Closed rate, Responsed Rate, Awaiting Time</a></li>
+<li class="chapter" data-level="4.2.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#app-usage-vs.-demographic-information"><i class="fa fa-check"></i><b>4.2.2</b> App Usage vs. Demographic Information</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="divider"></li>
@@ -125,6 +129,10 @@
 <center>
 <img src="image/f-interaction.png" style="width:80.0%" />
 </center>
+<p><strong>Summary:</strong> A regression analysis shows that the variance in 311 reports per capita is associated with demographic characteristics such as income, race, and education (p &lt; 0.01, 0.1, 0.05 respectively).</p>
+<p><strong>Significance:</strong> Given that 311 services need to be requested to be provided, we can assume that neighborhoods with more 311 requests per capita will receive disproportionate benefits from city services compared with those that file fewer requests per capita (assuming all requests are attended to equally and the feasibility of resolving requests doesn’t vary across neighborhoods).</p>
+<p>Importantly, these results demonstrate an inversion of the socially desirable allocation of resources, whereby needy neighborhoods would be the ones receiving the most support from city services. In our case, it seems like a reasonable assumption that less well-off neighborhoods are the ones that are most in need of the services offered through 311 (e.g. repairs, cleaning, beautification, maintenance etc.), but it is well-off neighborhoods that are receiving disproportionate benefits from 311 based on their higher propensity to seek services.</p>
+<p><strong>Interpretation:</strong> There are many possible explanations for this finding. People in less well-off neighborhoods may file fewer 311 requests per capita due to a lack of awareness of 311 services, mistrust of government, less leisure time to file cases, language barriers, or preference for local community-oriented problem solving rather than reliance on city government.</p>
 </div>
 <div id="close-rate-resolved-rate-awaiting-time-across-different-neighborhoods" class="section level3 hasAnchor" number="4.1.2">
 <h3><span class="header-section-number">4.1.2</span> Close rate, Resolved Rate, Awaiting Time Across Different Neighborhoods<a href="fairness-analysis.html#close-rate-resolved-rate-awaiting-time-across-different-neighborhoods" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -253,7 +261,29 @@
 </div>
 <div id="fairness-analysis-based-on-channel" class="section level2 hasAnchor" number="4.2">
 <h2><span class="header-section-number">4.2</span> Fairness Analysis Based on Channel<a href="fairness-analysis.html#fairness-analysis-based-on-channel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="number-of-requests-by-channel-vs.closed-rate-responsed-rate-awaiting-time" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Number of Requests by Channel vs.Closed rate, Responsed Rate, Awaiting Time<a href="fairness-analysis.html#number-of-requests-by-channel-vs.closed-rate-responsed-rate-awaiting-time" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<center>
+<img src="image/f-3bar.png" />
+</center>
+<p><strong>Summary:</strong> From this portion of our analysis, we can see that there are statistically significant differences in our response metrics based on which channel a 311 request is filed through. The differences between “Constituent Call” and “Citizens Connect App” are the most important, as these two channels are used by citizens in 83% of all cases filed (46% app, 37% call).</p>
+<p><strong>Significance:</strong> In terms of outcomes, the app appears to be a better channel for filing cases. Cases filed through the app have a significantly shorter waiting time than cases filed over the phone (7.6 days compared to 11.3 days), a much higher resolution rate (61% compared to 42%), and a higher close rate (90% compared to 85%). We suspect these differences are due to the amount and quality of information collected through each channel. The app collects useful data that does not come through phone requests, such as photos and geo-coordinates. The app also provides a more consistent, form-based structure for information gathering, whereas phone requests are more conversational. As a result, cases filed through the app may be easier for case workers to scope, understand, locate, and resolve.</p>
+<p><strong>Implications:</strong> These findings may have important implications on the fairness of Boston’s 311 services. If app usage varies across neighborhoods, some may end up receiving better service than others (i.e. faster response time, higher resolution rate, more case closure). It would be more troubling if app usage were to correlate with neighborhood-level demographic characteristics such as race, income, and education. The next section explores these questions.</p>
+</div>
+<div id="app-usage-vs.-demographic-information" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> App Usage vs. Demographic Information<a href="fairness-analysis.html#app-usage-vs.-demographic-information" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<center>
+<img src="image/f-bar.png" />
+</center>
+<center>
+<img src="image/f-channelreg.png" />
+</center>
+<p><strong>Neighborhood-level app usage:</strong> First, we find that there is a large amount of variance in app usage by neighborhood. Some, such as South End, have more than 60% of their cases filed through the app, while others, such as Greater Mattapan, have roughly 20%. Based on our previous analysis, we would expect those neighborhoods with higher app usage to receive better services.</p>
+<p><strong>Demographic Differences:</strong> More concerning is the association that app usage has with demographic characteristics. Neighborhoods that are richer, whiter, and more educated have significantly higher rates of app usage (p &lt; 0.01 for per capita income and education, p &lt; 0.05 for whiteness), suggesting that well off neighborhoods are more likely to receive fast and effective service by virtue of their higher propensity to use the app.</p>
+<p><strong>Possible Explanations:</strong> The differences in app usage and its correlation with neighborhood-level demographic characteristics may be due to several factors. First, citizens in well-off neighborhoods may be more likely to have smartphones. Second, they may be more aware of the Citizen Connect App due to marketing or word of mouth. Third, they may belong to demographic groups that would have an easier time using the app effectively (e.g. younger, more tech-savvy, and higher english proficiency). The 311 phone service may be comparatively attractive to citizens who don’t have access to the app or prefer the phone line due to technological or language constraints.</p>
+<p><strong>Recommendations:</strong> The city should aim to equalize its service provision across neighborhoods by expanding app usage into less well-off neighborhoods and improving case outcomes from phone requests. This effort should involve 1) studying why discrepancies in channel usage exist, 2) making an effort to raise awareness and adoption of the Citizen Connect App, 3) ensuring equal accessibility on both the app and phone line (e.g. any language offered on the phone line should be supported by the app), and 4) streamlining the data collection and case resolution process for phone requests.</p>
 
+</div>
 </div>
 </div>
             </section>
