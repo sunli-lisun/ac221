@@ -13,9 +13,16 @@ Like many cities in the U.S., Boston offers a 311 line to connect citizens with 
 ![](image/311-pic.jpg){width=50%}
 </center>
 
-Citizens are more likely to file 311 reports if 1) they have high levels of trust in city government, 2) they have time on their hands, 3) they have highly visible issues in their communities, 4) they consider 311 to be the best recourse to address their problems. These characteristics are likely to vary across individuals and communities due to historical and cultural factors. The case management and response process may be affected by historical bias. Some citizens’ or communities’ problems may be taken more seriously due to their status within society. Thus, this study combines the 311 service request datasets with demographic data, such as income, education level, poverty rate, race distribution, poverty rate, to answer the question:
+Citizens are more likely to file 311 reports if 
+
+- They have high levels of trust in city government,
+- They have time on their hands,
+- They have highly visible issues in their communities, 
+- They consider 311 to be the best recourse to address their problems. 
+
+These characteristics are likely to vary across individuals and communities due to historical and cultural factors. The case management and response process may be affected by historical bias. Some citizens’ or communities’ problems may be taken more seriously due to their status within society. Thus, this study combines the 311 service request datasets with demographic data, such as income, education level, poverty rate, race distribution, poverty rate, to answer the question:
 
 **Does Boston provide 311 services fairly and equally to all citizens?**
 
-For more details of this project, click the [**link here**](https://colab.research.google.com/drive/1uuc1xRjUtpP2fse0SLNKNdIH5IFPo0Y5?authuser=1#scrollTo=Rb3oDYNCS92H) to view the notebook of this project.
+For more details of this project, click the [**link here**](https://colab.research.google.com/drive/1q_iUwBBmyik1JekXhnC_GnLUJ8p4sfx2?authuser=1#scrollTo=D427vsaZnvBx) to view the notebook of this project.
 

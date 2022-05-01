@@ -124,5 +124,10 @@ For all four demographic factors: population, income, poverty and education leve
 
 **Possible Explanations:** The differences in app usage and its correlation with neighborhood-level demographic characteristics may be due to several factors. First, citizens in well-off neighborhoods may be more likely to have smartphones. Second, they may be more aware of the Citizen Connect App due to marketing or word of mouth. Third, they may belong to demographic groups that would have an easier time using the app effectively (e.g. younger, more tech-savvy, and higher english proficiency). The 311 phone service may be comparatively attractive to citizens who don't have access to the app or prefer the phone line due to technological or language constraints. 
 
-**Recommendations:** The city should aim to equalize its service provision across neighborhoods by expanding app usage into less well-off neighborhoods and improving case outcomes from phone requests. This effort should involve 1) studying why discrepancies in channel usage exist, 2) making an effort to raise awareness and adoption of the Citizen Connect App, 3) ensuring equal accessibility on both the app and phone line (e.g. any language offered on the phone line should be supported by the app), and 4) streamlining the data collection and case resolution process for phone requests.
+**Recommendations:** The city should aim to equalize its service provision across neighborhoods by expanding app usage into less well-off neighborhoods and improving case outcomes from phone requests. This effort should involve 
+
+- Studying why discrepancies in channel usage exist
+- Making an effort to raise awareness and adoption of the Citizen Connect App 
+- Ensuring equal accessibility on both the app and phone line (e.g. any language offered on the phone line should be supported by the app)
+- Streamlining the data collection and case resolution process for phone requests.
 
