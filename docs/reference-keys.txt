@@ -9,4 +9,9 @@ longitudinal-analysis
 distribution-analysis-across-neighborhood
 demographic-analysis
 fairness-analysis
+fairness-analysis-based-on-neighborhood
+interaction-level-across-different-neighborhoods
+close-rate-resolved-rate-awaiting-time-across-different-neighborhoods
+race
+fairness-analysis-based-on-channel
 conclusion

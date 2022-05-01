@@ -1,1 +1,16 @@
 # Fairness Analysis
+
+## Fairness Analysis Based on Neighborhood
+
+### 311 Interaction Level Across Different Neighborhoods
+<center>
+![](image/f-interaction.png){width=80%}
+</center>
+
+### Close rate, resolved rate, awaiting time Across Different Neighborhoods
+
+#### Race
+<center>
+![](image/f-white.png){width=80%}
+</center>
+## Fairness Analysis Based on Channel
