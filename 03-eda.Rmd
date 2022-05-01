@@ -8,15 +8,6 @@ We first examine the time trend of the request number in four years. The graph b
 
 ## Distribution Analysis across Neighborhood
 
-**311 Requests by Different Channels across Neighborhood**
-
-There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods. 
-Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often. 
-
-<center>
-![](image/eda-channel.png){width=80%}
-</center>
-
 **311 Report Request Number in Different Neighborhood**
 
 
@@ -31,6 +22,19 @@ The map intuitively shows that 311 report request numbers vary a lot geographica
 ![](image/eda-numberrequest.png){width=80%}
 </center>
 
+We further normalized the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has highest request number, doesn't have high report number per capita.
+<center>
+![](image/eda-numberpercapita.png){width=80%}
+</center>
+
+**311 Requests by Different Channels across Neighborhood**
+
+There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods. 
+Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often. 
+
+<center>
+![](image/eda-channel.png){width=80%}
+</center>
 
 **Distribution of Close Cases in Different Boston Neighborhoods**
 

@@ -118,12 +118,6 @@ We first examine the time trend of the request number in four years. The graph b
 </div>
 <div id="distribution-analysis-across-neighborhood" class="section level2 hasAnchor" number="3.2">
 <h2><span class="header-section-number">3.2</span> Distribution Analysis across Neighborhood<a href="exploratory-data-analysis.html#distribution-analysis-across-neighborhood" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>311 Requests by Different Channels across Neighborhood</strong></p>
-<p>There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
-Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often.</p>
-<center>
-<img src="image/eda-channel.png" style="width:80.0%" />
-</center>
 <p><strong>311 Report Request Number in Different Neighborhood</strong></p>
 <center>
 <img src="image/eda-map.png" style="width:80.0%" />
@@ -131,6 +125,16 @@ Though the most commonly used channels are citizens connect APP and 311 phone ca
 <p>The map intuitively shows that 311 report request numbers vary a lot geographically (please go to jupyter notebook to view the interactive version). The northern part is yellower than the southern part which indicates that citizens in the northeastern part generates more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower than of request numbers. Those neighborhoods are located in the western part.</p>
 <center>
 <img src="image/eda-numberrequest.png" style="width:80.0%" />
+</center>
+We further normalized the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has highest request number, doesn’t have high report number per capita.
+<center>
+<img src="image/eda-numberpercapita.png" style="width:80.0%" />
+</center>
+<p><strong>311 Requests by Different Channels across Neighborhood</strong></p>
+<p>There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
+Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often.</p>
+<center>
+<img src="image/eda-channel.png" style="width:80.0%" />
 </center>
 <p><strong>Distribution of Close Cases in Different Boston Neighborhoods</strong></p>
 <p>Most neighborhoods have close rate higher than 85%. Chestnut Hill, Fenway/ Kenmore/ Audubon Circle/ Longwood is the only neighborhood has close rate (81.21%) lower than 85%. Beacon Hill has the highest closed rate (91.55%), followed by South End (91%) and East Boston (90.37%).</p>
