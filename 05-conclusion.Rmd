@@ -2,6 +2,8 @@
 
 ## High-Level Trends & Insights
 
+From the longitudinal analysis, there is a noticeable seasonality pattern in the request number, which increases first, peaks in summer and then decreases. A sharp drop of the request number occurred in the early stage of 2020 when the Covid-19 started. From the distribution analysis across neighborhood, the number of requests across neighborhoods vary a lot. Citizens in the northeastern part of Boston generally produce more requests than citizens in the southwestern part as shown in the heat map. When normalizing the number of 311 requests by the population, the number of 311 requests per capita are all greater than 1, and the distribution of 311 reports per capital is different from the distribution of absolute request numbers across neighborhoods. As for request channels, two most commonly used channels in most neighborhoods are ‘Citizens Connect APP’ and ‘Constituent Call’.  The distribution of close cases vary in different Boston neighborhoods, and most neighborhoods have close rate higher than 85%. The distribution of resolved cases and average awaiting time in different neighborhoods are also different. On average, it takes at least one week before the case is closed. From the demographic analysis, the distributions of race, income, education and poverty level in each neighborhood are significantly different. 
+
 ## Fairness & Bias
 
 While we find it unlikely that there is any explicit bias in Boston's 311 service provision (e.g. intentional prioritization of well-off neighborhoods or witholding of services from needy ones), we find discrepancies along demographic lines in the way the service is used, making it likely that neighborhoods do not receive equal treatment from city government through 311. 

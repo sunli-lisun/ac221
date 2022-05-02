@@ -23,6 +23,7 @@ The map intuitively shows that 311 report request numbers vary a lot geographica
 </center>
 
 We further normalize the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has the highest request number, does not have high report number per capita.
+
 <center>
 ![](image/eda-numberpercapita.png){height="420"}
 </center>
@@ -65,7 +66,8 @@ On average, people need to wait at least a week for a case to be closed except i
  
 **Race Distribution** 
 
-Race distribution of each neighborhood is significantly different. Black is dominant in Dorchester, Hyde Park, Greater Mattapan, and Roxbury ; whereas White is dominant in South Boston/ South Boston Waterfront, South End, Jamaica Plain, and Allston/ Brighton. East Boston is the only neighborhood that Hispanic has the largest proportion. 
+Race distribution of each neighborhood is significantly different. Black is dominant in Dorchester, Hyde Park, Greater Mattapan, and Roxbury ; whereas White is dominant in South Boston/ South Boston Waterfront, South End, Jamaica Plain, and Allston/ Brighton. East Boston is the only neighborhood that Hispanic has the largest proportion.
+
 <center>
 ![](image/eda-demo-race.png){height="550"}
 </center>
@@ -89,7 +91,7 @@ Distribution of education level is different from each neighborhood. For easy vi
 
 **Poverty Distribution**
 
-Distribution of poverty rate is different in each neighborhood. Ferway/ Kenmore/ Audubon Circle/ Longwood is the neighborhood with the highest poverty rate (39.2%), followed by  Mission Hill, Roxbury and Longwood. All of these neighborhood have porverty rate larger than 25%. On the other side, West Roxbury has the lowest poverty rate (6.3%), followed by North End and Beacon Hill. The poverty rate of these neighborhoods are all lower than 8%.
+Distribution of poverty rate is different in each neighborhood. Ferway/ Kenmore/ Audubon Circle/ Longwood is the neighborhood with the highest poverty rate (39.2%), followed by Mission Hill, Roxbury and Longwood. All of these neighborhood have porverty rate larger than 25%. On the other side, West Roxbury has the lowest poverty rate (6.3%), followed by North End and Beacon Hill. The poverty rate of these neighborhoods are all lower than 8%.
 
 <center>
 ![](image/eda-demo-poverty.png){height="550"}
