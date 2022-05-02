@@ -100,7 +100,14 @@
 <li class="chapter" data-level="4.2.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#app-usage-vs.-demographic-information"><i class="fa fa-check"></i><b>4.2.2</b> App Usage vs. Demographic Information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="conclusion.html"><a href="conclusion.html#high-level-trends-insights"><i class="fa fa-check"></i><b>5.1</b> High-Level Trends &amp; Insights</a></li>
+<li class="chapter" data-level="5.2" data-path="conclusion.html"><a href="conclusion.html#fairness-bias"><i class="fa fa-check"></i><b>5.2</b> Fairness &amp; Bias</a></li>
+<li class="chapter" data-level="5.3" data-path="conclusion.html"><a href="conclusion.html#limitations"><i class="fa fa-check"></i><b>5.3</b> Limitations</a></li>
+<li class="chapter" data-level="5.4" data-path="conclusion.html"><a href="conclusion.html#recommendations"><i class="fa fa-check"></i><b>5.4</b> Recommendations</a></li>
+<li class="chapter" data-level="5.5" data-path="conclusion.html"><a href="conclusion.html#open-questions-and-further-analysis"><i class="fa fa-check"></i><b>5.5</b> Open Questions and Further Analysis</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -266,14 +273,14 @@
 <ul>
 <li><p><strong>Close Rate</strong>: Number of close cases divided by total number of requests. The close cases are identified from ‘case status’.</p></li>
 <li><p><strong>Resolved Rate</strong>: Number of resolved cases divided by total number of requests. The resolved cases are identified from ‘closure_reason’.</p></li>
-<li><p><strong>Awaiting Time</strong>: ‘closed_dt’ - ‘open_dt’.</p></li>
-<li><p><strong>Number of Requests Per Capita</strong>: Total number of requests in a neighborhood divided by the population of that neighborhood. Population data will be described below.</p></li>
+<li><p><strong>Awaiting Time</strong>: Time period between open time and closed time of a request which is ‘closed_dt’ - ‘open_dt’.</p></li>
+<li><p><strong>Number of Requests Per Capita</strong>: Total number of requests in a neighborhood accumulated by four years divided by the population of that neighborhood. Population data will be described below.</p></li>
 </ul>
 </div>
 </div>
 <div id="demographic-data" class="section level2 hasAnchor" number="2.2">
 <h2><span class="header-section-number">2.2</span> Demographic Data<a href="data-sources.html#demographic-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Demographic related data grouped by neighborhoods, including race, per capita income, education level, poverty rate, is also download from <a href="https://data.boston.gov/dataset/neighborhood-demographics"><strong>City of Boston ’s open data hub</strong></a> compiled by Boston Planning and Development Agency (BPDA). Since cencus data is not collect in every year, 2015-2019 is the most recent available neighborhood demographic data come from the 5-year American Community Survey (ACS). Below is the table of variables in this data set. The dempgraphic data is joined with 311 requests dataset by neighborhood.</p>
+<p>Demographic related data grouped by neighborhoods, including race, per capita income, education level, poverty rate, is also downloaded from <a href="https://data.boston.gov/dataset/neighborhood-demographics"><strong>City of Boston ’s open data hub</strong></a> compiled by Boston Planning and Development Agency (BPDA). Since cencus data is not collected in every year, 2015-2019 dataset is the most recent available 5-year American Community Survey (ACS) neighborhood demographic data. The demographic data is joined with 311 requests dataset by neighborhood.</p>
 <center>
 <p><img src="image/neighborhood.png" style="width:50.0%" /></p>
 

@@ -1,1 +1,36 @@
 # Conclusion
+
+## High-Level Trends & Insights
+
+## Fairness & Bias
+
+While we find it unlikely that there is any explicit bias in Boston's 311 service provision (e.g. intentional prioritization of well-off neighborhoods or witholding of services from needy ones), we find discrepancies along demographic lines in the way the service is used, making it likely that neighborhoods do not receive equal treatment from city government through 311. 
+
+Neighborhoods that are whiter and more well-off tend to file more 311 reports per capita, suggesting that their residents receive disproportionate attention, resources, and benefits from the city through 311 service provision. Less well-off neighborhoods presumably have a greater need for 311 services, so this imbalance should be corrected by the city to mitigate inequality in living conditions between the most and least well-off areas.
+
+Additionally, our analysis suggests that whiter and more well-off neighborhoods have a stronger preference for using the Citizen Connect App compared to their less well-off counterparts, which increases the likelihood that their cases are solved quickly and successfully. 
+
+These factors, taken together, provide strong evidence for the existence of conditions leading to unequal outcomes along demographic lines, and a logical explanation for how it might occur. Simply put, residents of whiter and more well-off neighborhoods are more likely to benefit from 311 services due to disproportionate usage of the system through more effective channels.
+
+## Limitations
+
+Our ability to detect bias in the dataset is limited by the granularity of demographic data we were able to match to reported cases. The 311 dataset does not have any personal details attached to cases, so all demographic data in our analysis was aggregated to the neighborhood-level. This prevented us from making any direct assessments on representation bias and individual treatment according to demographic factors. Our neighborhood-aggregated data may have obscured important insights we could not access at the individual level. For example, individual-level detail may have revealed which demographic groups within each neighborhood were filing 311 cases. Perhaps it was only the poorest quartile in each neighborhood using 311 - in that case, our concerns about the association between neighborhood-level income and reports per capita would be unwarranted. Perhaps certain demographic groups were underrepresented in case reports - in that case the city might want to consider intentional efforts to expand usage withon those subgroups so that their needs are being addressed.  
+
+## Recommendations
+
+Given our findings, we believe the City of Boston can improve the efficiency and fairness of its 311 service by undertaking the following measures:
+
+1. Allocating more resources toward 311 case resolution during the seasonal peaks.
+
+2. Researching barriers to 311 access and usage - the city must understand why usage varies so much by neighborhood, and why demographic characteristics are associated with different levels and patterns of 311 usage.
+
+3. Equalizing case resolution by request channel - citizens should not be at a disadvantage based on their preferred channel for interacting with city government. The city should first analyze why outcomes are so much better when cases are filed through the app and subsequently close the gap. This might involve streamlining the information intake process over the phone, adding more languages to the app, or other operational improvements.
+
+4. Increasing awareness and adoption of 311 services among the neediest communities. This may involve targeted marketing, partnering with community based organizations, and overcoming trust barriers preventing communities from turning to the government to solve their problems.
+
+## Open Questions and Further Analysis
+
+Future research can look into whether disparate outcomes exists when controlling for the type of case that people file with 311. Some types of cases, such as pothole repair, are probably more complicated and time consuming than others, such as needle pickup. Our findings of discrepancies across neighborhoods along demographic lines may be influenced by the types of cases that get filed in different neighborhoods. For example, if low-income neighborhoods tended to file complex cases, it would not be a surprise to see longer waiting times and lower resolution rates. 
+
+More analysis on background and historical conditions in Boston could explain differences in the willingness to use 311 and the effectiveness of the service. It could also shed light on sources of historical bias that continue to affect interactions between city government and its residents. 
+

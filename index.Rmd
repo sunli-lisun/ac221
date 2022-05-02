@@ -15,10 +15,10 @@ Like many cities in the U.S., Boston offers a 311 line to connect citizens with 
 
 Citizens are more likely to file 311 reports if 
 
-- They have high levels of trust in city government,
-- They have time on their hands,
-- They have highly visible issues in their communities, 
-- They consider 311 to be the best recourse to address their problems. 
+- They have high levels of trust in city government
+- They have time on their hands
+- They have highly visible issues in their communities
+- They consider 311 to be the best recourse to address their problems
 
 These characteristics are likely to vary across individuals and communities due to historical and cultural factors. The case management and response process may be affected by historical bias. Some citizens’ or communities’ problems may be taken more seriously due to their status within society. Thus, this study combines the 311 service request datasets with demographic data, such as income, education level, poverty rate, race distribution, poverty rate, to answer the question:
 

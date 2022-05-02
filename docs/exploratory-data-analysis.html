@@ -100,7 +100,14 @@
 <li class="chapter" data-level="4.2.2" data-path="fairness-analysis.html"><a href="fairness-analysis.html#app-usage-vs.-demographic-information"><i class="fa fa-check"></i><b>4.2.2</b> App Usage vs. Demographic Information</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="conclusion.html"><a href="conclusion.html#high-level-trends-insights"><i class="fa fa-check"></i><b>5.1</b> High-Level Trends &amp; Insights</a></li>
+<li class="chapter" data-level="5.2" data-path="conclusion.html"><a href="conclusion.html#fairness-bias"><i class="fa fa-check"></i><b>5.2</b> Fairness &amp; Bias</a></li>
+<li class="chapter" data-level="5.3" data-path="conclusion.html"><a href="conclusion.html#limitations"><i class="fa fa-check"></i><b>5.3</b> Limitations</a></li>
+<li class="chapter" data-level="5.4" data-path="conclusion.html"><a href="conclusion.html#recommendations"><i class="fa fa-check"></i><b>5.4</b> Recommendations</a></li>
+<li class="chapter" data-level="5.5" data-path="conclusion.html"><a href="conclusion.html#open-questions-and-further-analysis"><i class="fa fa-check"></i><b>5.5</b> Open Questions and Further Analysis</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 </ul>
@@ -124,7 +131,7 @@
 <h1><span class="header-section-number">Chapter 3</span> Exploratory Data Analysis<a href="exploratory-data-analysis.html#exploratory-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <div id="longitudinal-analysis" class="section level2 hasAnchor" number="3.1">
 <h2><span class="header-section-number">3.1</span> Longitudinal Analysis<a href="exploratory-data-analysis.html#longitudinal-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-We first examine the time trend of the request number in four years. The graph below shows a seasonality trend in each year, where it increases first, peaks in summer season, then decreases. We can also notice that there is a sharp drop in request number in week 10 to week 15 of 2020. A possible explanation would be the start of Covid-19 which leads citizens to stay at home and make less requests.
+We first examine the time trend of the request number in four years. The graph below shows a seasonality trend in each year, where it increases first, peaks in summer season, then decreases. We can also notice that there is a sharp drop in request number in week 10 to week 15 of 2020. A possible explanation would be the start of Covid-19 which leads citizens to staying at home and making less requests.
 <center>
 <p><img src="image/time.png" style="width:80.0%" /></p>
 </div>
@@ -134,51 +141,55 @@ We first examine the time trend of the request number in four years. The graph b
 <center>
 <img src="image/eda-map.png" style="width:80.0%" />
 </center>
-<p>The map intuitively shows that 311 report request numbers vary a lot geographically (please see jupyter notebook if you want to view the interactive version). The northern part is yellower than the southern part which indicates that citizens in the northeastern part generates more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower than of request numbers. Those neighborhoods are located in the western part.</p>
+<p>The map intuitively shows that 311 report request numbers vary a lot geographically (see jupyter notebook for interactive version). The northeastern part is yellower than the southwestern part which indicates that citizens in the northeastern part generate more requests than the citizens in the southwestern part. In order to quantitatively compare the request numbers in every neighborhood, a bar plot is further generated. Dorchester is the neighborhood that has the largest number of requests followed by Roxbury and South Boston/ South Boston Waterfront. They are all located in the middle or the northern part of the previous map. In contrast, Chestnut Hill, Mission Hill, and Fenway/ Kenmore/ Audubon Circle/ Longwood are the neighborhoods with lower request numbers. Those neighborhoods are located in the western part.</p>
 <center>
-<img src="image/eda-numberrequest.png" style="width:80.0%" />
+<img src="image/eda-numberrequest.png" height="420" />
 </center>
-We further normalize the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has highest request number, doesn’t have high report number per capita.
+We further normalize the number of 311 Reports by the population of that neighborhood. In all neighborhoods, 311 reports per capita are all greater than 1. Number of requests per capita is the highest in Downtown/ Financial District, followed by Beacon Hill and Back Bay. Misson Hill, Allston/ Brighton, and West Roxbury have relatively low request number per capita. Dorchester, which has the highest request number, does not have high report number per capita.
 <center>
-<img src="image/eda-numberpercapita.png" style="width:80.0%" />
+<img src="image/eda-numberpercapita.png" height="420" />
 </center>
 <p><strong>311 Requests by Different Channels across Neighborhood</strong></p>
-<p>There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, Heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
-Though the most commonly used channels are citizens connect APP and 311 phone calls, some neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but some neighborhoods (e.g. Chestnut Hill, Greater Mattapan) use phone call more often.</p>
+<p>There are six channels that citizens could use to report their requests. After grouping the requests by neighborhoods, heatmap is used to show the distribution of number of requests from different channels. The graph shows that there are slightly difference in the distribution of channels of different neighborhoods.
+Though the most commonly used channels are Citizens Connect APP and 311 phone calls, most neighborhoods (e.g. Back Bay, South Boston/ South Boston Waterfront) use APP more often, but there are still several neighborhoods (e.g. Chestnut Hill, Greater Mattapan) that use phone call more often.</p>
 <center>
 <img src="image/eda-channel.png" style="width:80.0%" />
 </center>
 <p><strong>Distribution of Close Cases in Different Boston Neighborhoods</strong></p>
-<p>Most neighborhoods have close rate higher than 85%. Chestnut Hill, Fenway/ Kenmore/ Audubon Circle/ Longwood is the only neighborhood has close rate (81.21%) lower than 85%. Beacon Hill has the highest closed rate (91.55%), followed by South End (91%) and East Boston (90.37%).</p>
+<p>Most neighborhoods have close rate higher than 85%. Fenway/ Kenmore/ Audubon Circle/ Longwood is the only neighborhood has close rate (81.21%) lower than 85%. Beacon Hill has the highest closed rate (91.55%), followed by South End (91%) and East Boston (90.37%).</p>
 <center>
 <img src="image/eda-close.png" style="width:80.0%" />
 </center>
 <p><strong>Distribution of Resolved Cases in Different Boston Neighborhoods</strong></p>
-<p>From the graph above, Greater Mattapan and West Roxbury are the two neighborhoods that have non_resolved cases numbers higher than resolved cases numbers which indicates the resolved rate is lower than 50%. Among the other neighborhoods, South End (59.44%) and Alluston/ Bringhton (58.57%) have relatively high resolved rates; whereas, Fenway / Kenmore / Audubon Circle / Longwood (51.01%), Mission Hill (51.46%), Boston (50.67%) have relatively low resolved rates.</p>
+<p>From the graph above, Greater Mattapan and West Roxbury are the two neighborhoods with non_resolved case numbers higher than resolved case numbers which indicates the resolved rate is lower than 50%. Among the other neighborhoods, South End (59.44%) and Alluston/ Bringhton (58.57%) have relatively high resolved rate; whereas, Fenway / Kenmore / Audubon Circle / Longwood (51.01%), Mission Hill (51.46%) and Boston (50.67%) have relatively low resolved rate.</p>
 <center>
 <img src="image/eda-resolve.png" style="width:80.0%" />
 </center>
 <p><strong>Distribution of Average Awaiting Time in Different Boston Neighborhoods</strong></p>
-<p>On average, people need to wait at least a week for a case to be closed except in Chestnut Hill which might due to the extreme low number of cases. South Boston/ South Boston Waterfront, South End, and Roxbury have relatively short waiting time compared to Hyde Park, Charlestown, and West Roxbury where people need to wait longer.</p>
+<p>On average, people need to wait at least a week for a case to be closed except in Chestnut Hill. This might due to the extreme low number of cases which bias could be introduced. South Boston/ South Boston Waterfront, South End, and Roxbury have relatively short waiting time compared to Hyde Park, Charlestown, and West Roxbury where people need to wait longer.</p>
 <center>
 <img src="image/eda-awaiting.png" style="width:80.0%" />
 </center>
 </div>
 <div id="demographic-analysis" class="section level2 hasAnchor" number="3.3">
 <h2><span class="header-section-number">3.3</span> Demographic Analysis<a href="exploratory-data-analysis.html#demographic-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<strong>Race Distribution Description:</strong> Race distribution of each neighborhood is significantly different. Black is dominant in Dorchester, Hyde Park, Greater Mattapan, and Roxbury ; whereas White is dominant in South Boston/ South Boston Waterfront, South End, Jamaica Plain, and Allston/ Brighton. East Boston is the only neighborhood that Hispanic has the largest proportion.
+<p><strong>Race Distribution</strong></p>
+Race distribution of each neighborhood is significantly different. Black is dominant in Dorchester, Hyde Park, Greater Mattapan, and Roxbury ; whereas White is dominant in South Boston/ South Boston Waterfront, South End, Jamaica Plain, and Allston/ Brighton. East Boston is the only neighborhood that Hispanic has the largest proportion.
 <center>
 <img src="image/eda-demo-race.png" height="550" />
 </center>
-<p><strong>Income Distribution Description:</strong> Per capita Income is significantly different in each neighborhood. The per capita income of Back Bay is the highest, and it is the only neighborhood having per capita income larger than 100,000. The per capita income of Beacon Hill and South Boston/ South Boston Waterfront are also relatively high. The per capita income of Longwood, Roxbury and Mission Hill are lower than 25,000 which are the lowest among all neighborhoods.</p>
+<p><strong>Income Distribution</strong></p>
+<p>Per capita Income is significantly different in each neighborhood. The per capita income of Back Bay is the highest, and it is the only neighborhood having per capita income larger than 100,000. The per capita income of Beacon Hill and South Boston/ South Boston Waterfront are also relatively high. The per capita income of Longwood, Roxbury and Mission Hill are lower than 25,000 which are the lowest among all neighborhoods.</p>
 <center>
 <img src="image/eda-demo-income.png" height="550" />
 </center>
-<p><strong>Education Level Distribution Description</strong>: Distribution of education Level is different from each neighborhood. From easy visualization and comparison, education level is further categorized to two categories - below bachelor and bachelor or higher. The proportion of bachelor or higher is higher than below bachelor in the majority of neighborhood except for Hyde Park, East Boston, Greater Mattapan, and Roxbury. Though the proportion of bachelor or higher people is higher in Dorchester and East Boston, the difference between these two group is small.</p>
+<p><strong>Education Level Distribution</strong></p>
+<p>Distribution of education level is different from each neighborhood. For easy visualization and comparison, education level is further categorized to two categories - “below bachelor” and “bachelor or higher”. The proportion of’ bachelor or higher’ is higher than ‘below bachelor’ in the majority of neighborhoods except for Hyde Park, East Boston, Greater Mattapan, and Roxbury. Though the proportion of people with “bachelor or higher” degree is higher in Dorchester and East Boston, the proportion differences between these two groups are small.</p>
 <center>
 <img src="image/eda-demo-edu.png" height="550" />
 </center>
-<p><strong>Poverty Distribution Description</strong>: Distribution of poverty rate is different from each neighborhood. Ferway/ Kenmore/ Audubon Circle/ Longwood is the neighborhood with the highest poverty rate (39.2%), followed by Mission Hill, Roxbury and Longwood. All of these neighborhood have porverty rate larger than 25%. On the other side, West Roxbury has the lowest poverty rate (6.3%), followed by North End and Beacon Hill. The poverty rates of these neighborhood are all lower than 8%.</p>
+<p><strong>Poverty Distribution</strong></p>
+<p>Distribution of poverty rate is different in each neighborhood. Ferway/ Kenmore/ Audubon Circle/ Longwood is the neighborhood with the highest poverty rate (39.2%), followed by Mission Hill, Roxbury and Longwood. All of these neighborhood have porverty rate larger than 25%. On the other side, West Roxbury has the lowest poverty rate (6.3%), followed by North End and Beacon Hill. The poverty rate of these neighborhoods are all lower than 8%.</p>
 <center>
 <img src="image/eda-demo-poverty.png" height="550" />
 </center>

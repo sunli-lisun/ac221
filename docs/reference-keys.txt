@@ -25,3 +25,8 @@ fairness-analysis-based-on-channel
 number-of-requests-by-channel-vs.closed-rate-responsed-rate-awaiting-time
 app-usage-vs.-demographic-information
 conclusion
+high-level-trends-insights
+fairness-bias
+limitations
+recommendations
+open-questions-and-further-analysis
