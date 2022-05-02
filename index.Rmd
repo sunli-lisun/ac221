@@ -24,5 +24,5 @@ These characteristics are likely to vary across individuals and communities due 
 
 **Does Boston provide 311 services fairly and equally to all citizens?**
 
-For more details of this project, click the [**link here**](https://colab.research.google.com/drive/1q_iUwBBmyik1JekXhnC_GnLUJ8p4sfx2?authuser=1#scrollTo=D427vsaZnvBx) to view the notebook of this project.
+For more details of this project, click the [**link here**](https://colab.research.google.com/drive/1q_iUwBBmyik1JekXhnC_GnLUJ8p4sfx2?usp=sharing) to view the notebook of this project.
 
